@@ -4,7 +4,6 @@ from dados import password
 from dados import *
 
 from main import Noticia
-import main
 
 from time import sleep
 
@@ -33,6 +32,7 @@ def Exec():
 
 def Public():
 
+    #esta dando erro ao selecionar o btn de escrever publicação !!
     input_public = driver.find_element(By.CLASS_NAME, btn_publicacao)
     input_public.click()
 
@@ -42,9 +42,7 @@ def Public():
 
 
 Noticia()
-sleep(1)
 Exec()
-sleep(5)
 Public()
 
 
