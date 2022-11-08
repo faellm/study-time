@@ -9,6 +9,9 @@ driver = webdriver.Chrome('/Users/rafaellaramartins/Desktop/study time/Data Scie
 
 #email e senha
 
+email = '' #seu email do Linkedin
+password = '' #sua senha
+
 
 #url para web sraping
 url = 'https://g1.globo.com/'
