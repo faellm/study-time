@@ -39,6 +39,12 @@ def Public():
 
     #incluir a noticia
     input_public.send_keys('teste de envio de mensagens! ')
+
+    btn_send = driver.find_elemet(By.ID, ) #
+    sleep(1)
+    btn_send.click()
+
+    if
     
 
 Noticia()
