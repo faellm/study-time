@@ -8,8 +8,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome('/Users/rafaellaramartins/Desktop/study time/Data Scienci/g1/chromedriver 2')
 
 #email e senha
-email = 'rafaellara1405@gmail.com'
-password = 'coxinha123'
+
 
 #url para web sraping
 url = 'https://g1.globo.com/'

@@ -33,13 +33,13 @@ def Exec():
 def Public():
 
     #esta dando erro ao selecionar o btn de escrever publicação !!
+
     input_public = driver.find_element(By.CLASS_NAME, btn_publicacao)
     input_public.click()
 
     #incluir a noticia
     input_public.send_keys('teste de envio de mensagens! ')
     
-
 
 Noticia()
 Exec()
