@@ -2,7 +2,8 @@ from dados import url_link
 from dados import email
 from dados import password
 from dados import *
-import main
+from main import Noticia
+from time import sleep
 
 
 def Exec():
@@ -26,19 +27,24 @@ def Exec():
     buttun.click()
 
 
-def post ():
+def Post ():
+
     driver.get('https://www.linkedin.com/in/rafael-lara-martins-668402157/overlay/create-post/')
 
 
 def Public():
-    write = driver.find_element(By.CLASS_NAME, btn_public)
-    write.send_keys(Noticia.title)
+
+    print('parar de dar erro') #excluir
+    #Escrever no Soup
+
+    
 
 
 
-main()
+
 Exec()
-post()
+Noticia()
+Post()
 Public()
 
 
