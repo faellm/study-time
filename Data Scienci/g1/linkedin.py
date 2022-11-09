@@ -27,7 +27,7 @@ def Exec():
     entrar = driver.find_element(By.ID, input_user)
     entrar.send_keys(email)
 
-    sleep(1)
+    sleep(3)
 
     senha = driver.find_element(By.ID, input_pass)
     senha.send_keys(password)
@@ -35,24 +35,24 @@ def Exec():
     buttun = driver. find_element(By.CLASS_NAME, btn_entrar)
     sleep(1)
     buttun.click()
+    sleep(2)
 
 
 def Post ():
 
     driver.get('https://www.linkedin.com/in/rafael-lara-martins-668402157/overlay/create-post/')
-
-
-
-def Public():
-    escrita = driver.find_element(By.XPATH, btn_public)
-    escrita.send_keys(title)
-
+    sleep(3)
 
 
 Exec()
-Post()
-Public
 
+Post()
+
+
+##### PAROU AQUI #######
+
+escrita = driver.find_element(By.XPATH, btn_public)
+escrita.send_keys(title)    
 
 
 
