@@ -2,10 +2,7 @@ from dados import url_link
 from dados import email
 from dados import password
 from dados import *
-
-from main import Noticia
-
-from time import sleep
+import main
 
 
 def Exec():
@@ -28,27 +25,20 @@ def Exec():
     sleep(1)
     buttun.click()
 
-    
+
+def post ():
+    driver.get('https://www.linkedin.com/in/rafael-lara-martins-668402157/overlay/create-post/')
+
 
 def Public():
+    write = driver.find_element(By.CLASS_NAME, btn_public)
+    write.send_keys(Noticia.title)
 
-    #esta dando erro ao selecionar o btn de escrever publicação !!
 
-    input_public = driver.find_element(By.CLASS_NAME, btn_publicacao)
-    input_public.click()
 
-    #incluir a noticia
-    input_public.send_keys('teste de envio de mensagens! ')
-
-    btn_send = driver.find_elemet(By.ID, ) #
-    sleep(1)
-    btn_send.click()
-
-    if
-    
-
-Noticia()
+main()
 Exec()
+post()
 Public()
 
 
