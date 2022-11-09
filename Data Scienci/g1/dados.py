@@ -9,9 +9,8 @@ driver = webdriver.Chrome('/Users/rafaellaramartins/Desktop/study time/Data Scie
 
 #email e senha
 
-email = '' #seu email do Linkedin
-password = '' #sua senha
-
+email = 'rafaellara1405@gmail.com' #seu email do Linkedin
+password = 'coxinha123' #sua senha
 
 #url para web sraping
 url = 'https://g1.globo.com/'
@@ -27,6 +26,10 @@ input_pass = 'session_password' #id
 
 btn_entrar = 'sign-in-form__submit-button' #class
 
-btn_public = 'editor-content ql-container' #class
+btn_public = '//*[@id="ember77"]/div/div/div[1]/div[2]' #xpath
+
+
+#################################################################
+
 
 

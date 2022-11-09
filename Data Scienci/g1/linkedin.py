@@ -2,8 +2,18 @@ from dados import url_link
 from dados import email
 from dados import password
 from dados import *
-from main import Noticia
 from time import sleep
+
+import requests
+from bs4 import BeautifulSoup
+from dados import url
+
+response = requests.get(url)
+html = response.content
+soup = BeautifulSoup(html, 'html')
+news = soup.find('div', attrs={'class': 'feed-post-body'})
+title = news.find('a', attrs={'class':'feed-post-link'})
+print(title)
 
 
 def Exec():
@@ -32,20 +42,16 @@ def Post ():
     driver.get('https://www.linkedin.com/in/rafael-lara-martins-668402157/overlay/create-post/')
 
 
+
 def Public():
-
-    print('parar de dar erro') #excluir
-    #Escrever no Soup
-
-    
-
+    escrita = driver.find_element(By.XPATH, btn_public)
+    escrita.send_keys(title)
 
 
 
 Exec()
-Noticia()
 Post()
-Public()
+Public
 
 
 
