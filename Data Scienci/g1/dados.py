@@ -4,8 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.by import By
 
 #var do drive
-
-driver = webdriver.Chrome('/Users/rafaellaramartins/Desktop/study time/Data Scienci/g1/chromedriver')
+#colocar o caminho do seu WebDriver driver = webdriver.Chrome('AQUIII')
+driver = webdriver.Chrome('')
 
 #email e senha
 
